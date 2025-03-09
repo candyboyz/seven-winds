@@ -1,0 +1,23 @@
+{
+  "schemaFile": "http://185.244.172.108:8081/v3/api-docs",
+  "apiFile": "./src/store/emptyApi.ts",
+  "apiImport": "emptySplitApi",
+  "outputFile": "./src/store/outlayStringApi.ts",
+  "exportName": "outlayStringApi",
+  "hooks": true,
+  "tagTypes": ["TreeRows"],
+  "endpoints": {
+    "getTreeRowsUsingGet": {
+      "providesTags": ["TreeRows"]
+    },
+    "createRowInEntityUsingPost": {
+      "invalidatesTags": ["TreeRows"]
+    },
+    "deleteRowUsingDelete": {
+      "invalidatesTags": ["TreeRows"]
+    },
+    "updateRowUsingPost": {
+      "invalidatesTags": ["TreeRows"]
+    }
+  }
+}
